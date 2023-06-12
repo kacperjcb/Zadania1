@@ -18,3 +18,13 @@ class NumericInput extends TextInput {
         }
     }
 }
+$textInput = new TextInput();
+$textInput->add('Hello ');
+$textInput->add('World!');
+echo $textInput->getValue(); // Wyświetli: Hello World!
+
+$numericInput = new NumericInput();
+$numericInput->add('123');
+$numericInput->add('abc');
+$numericInput->add('456');
+echo $numericInput->getValue(); // Wyświetli: 123456
